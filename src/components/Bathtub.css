@@ -1,0 +1,156 @@
+
+h1 {
+    margin: 0; 
+    padding: 10px;
+    padding-top: 50px;
+}
+
+h3 {
+    margin-top: 30px;
+}
+
+.bathtub-container {
+    margin-top: 100px;
+}
+
+.bathtub {
+    height: 100px; 
+    border: solid;
+    background-color: white;
+    /* border-top: none; */
+    border-top-width: 0.5px;
+    width: 50%; 
+    margin: 0 auto;
+    position: relative;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+
+}
+
+.bathtub-water {
+    width: 100%;
+    transition: height 2s; 
+    background-color: #C0E8F9;
+    position: absolute; 
+    bottom: 0;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.bathtub, .button-l, .button-r {
+    display: inline-block;
+}
+
+
+.button-l {
+    margin-right: 100px;
+}
+
+.button-r {
+    margin-left: 100px;
+} 
+
+.button-r button {
+    padding: 8px 30px;
+    border-radius: 25px;
+    background-color: #33CA7F;
+    color: white;
+    border: none;
+}
+
+.button-l button {
+    padding: 8px 30px;
+    border-radius: 25px;
+    background-color: #D64045;
+    color: white;
+    border: none;
+}
+
+.button-r button:hover, .button-l button:hover {
+    text-decoration: underline;
+}
+
+svg, button {
+    display: block;
+}
+
+.svg-inline--fa {
+    height: 30px;
+}
+
+.svg-inline--fa.fa-w-16 {
+    width: 30px; 
+} 
+
+svg {
+    height: 30px;
+    width: auto;
+    margin-bottom: 30px;
+}
+
+/* media query for phone */
+
+@media all and (max-width: 450px) {
+
+    .bathtub-container {
+        text-align: center; 
+        margin-top: 50px;
+    }
+
+    .button-l, .bathtub, .button-r {
+        display: block;
+        margin-bottom: 50px;
+    }
+
+    .button-l, .button-r {
+        margin-right: 0;
+        margin-left: 0;
+        width: 100%; 
+    }
+
+    .button-l button, .button-r button {
+        margin: 0 auto; 
+    }
+
+
+    .button-r .svg-inline--fa {
+        display: none;
+    }
+
+    .bathtub {
+        width: 90%; 
+    }
+}
+
+/* media query for tablet (vertical) */
+
+@media all and (min-width: 760px) and (max-width: 1030px) {
+    .bathtub-container {
+        text-align: center; 
+        margin-top: 50px;
+    }
+
+    .button-l, .bathtub, .button-r {
+        display: block;
+        margin-bottom: 50px;
+    }
+
+    .button-l, .button-r {
+        margin-right: 0;
+        margin-left: 0;
+        width: 100%; 
+    }
+
+    .button-l button, .button-r button {
+        margin: 0 auto; 
+    }
+
+
+    .button-r .svg-inline--fa {
+        display: none;
+    }
+
+    .bathtub {
+        width: 90%; 
+    }
+}
